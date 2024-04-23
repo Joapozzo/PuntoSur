@@ -87,6 +87,7 @@ export const NavbarListResponsiveContainer = styled(motion.div)`
     bottom: 0;
     left: 0;
     width: 50%;
+    z-index: 99;
     background-color: var(--blue);
 `
 

@@ -11,7 +11,7 @@ const routes = () => {
   return (
     <BrowserRouter>
         <ReactDomRoutes>
-            <Route path='/home' element={<Layout> <Home/> </Layout>}/>
+            <Route path='/' element={<Layout> <Home/> </Layout>}/>
         </ReactDomRoutes>
     </BrowserRouter>
   )

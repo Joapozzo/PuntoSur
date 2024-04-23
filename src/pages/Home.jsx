@@ -29,8 +29,8 @@ const Home = () => {
               <CardProduct/>
               <CardProduct/>
               <CardProduct/>
-              <ViewMoreButton>Ver mas</ViewMoreButton>
             </CardProductContainer>
+            <ViewMoreButton>Ver mas</ViewMoreButton>
           </Section>
           <Footer/>
       </HomeWrapper>
