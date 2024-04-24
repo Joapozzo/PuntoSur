@@ -51,8 +51,8 @@ const Navbar = () => {
           // key="menu-responsive"
           >
             <NavbarListResponsive>
-                <NavbarItem>Inicio</NavbarItem>
-                <NavbarItem>Productos</NavbarItem>
+                <NavbarItem to="/">Inicio</NavbarItem>
+                <NavbarItem to="/productos">Productos</NavbarItem>
                 <NavbarItem onClick={scrollToContact}>Contacto</NavbarItem>
             </NavbarListResponsive>
         </NavbarListResponsiveContainer>
