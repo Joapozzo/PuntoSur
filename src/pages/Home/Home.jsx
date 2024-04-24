@@ -1,10 +1,10 @@
 import React from 'react'
 import { CardProductContainer, HomeContainerStyled, HomeWrapper, ViewMoreButton } from './HomeStyles'
-import HeroSlider from '../components/HeroSlider/HeroSlider'
-import Hero from '../components/Hero/Hero'
-import Section from '../components/Section/Section'
-import CardProduct from '../components/CardProduct/CardProduct'
-import Footer from '../components/Footer/Footer'
+import HeroSlider from '../../components/HeroSlider/HeroSlider'
+import Hero from '../../components/Hero/Hero'
+import Section from '../../components/Section/Section'
+import CardProduct from '../../components/CardProduct/CardProduct'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
   return (
@@ -32,7 +32,6 @@ const Home = () => {
             </CardProductContainer>
             <ViewMoreButton>Ver mas</ViewMoreButton>
           </Section>
-          <Footer/>
       </HomeWrapper>
     </HomeContainerStyled>
   )

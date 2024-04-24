@@ -1,35 +1,42 @@
 import React, { useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion';
-import { NavbarCartContainer, NavbarContainerStyled, NavbarItem, NavbarListContainer, NavbarListResponsive, NavbarListResponsiveContainer, NavbarWrapper } from './NavbarStyles'
+import { AnimatePresence } from 'framer-motion';
+import { Logo, NavbarCartContainer, NavbarContainerStyled, NavbarItem, NavbarListContainer, NavbarListResponsive, NavbarListResponsiveContainer, NavbarWrapper } from './NavbarStyles'
 //Icons
 import { IoMdCart } from "react-icons/io";
 import { FaBars } from "react-icons/fa6";
-
-
 
 const Navbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false)
 
+
   const handleSetMenuOpen = () => {
     setMenuOpen(!menuOpen);
+  };
+
+
+  const scrollToContact = () => {
+    const contactoSection = document.getElementById('contacto');
+    if (contactoSection) {
+      contactoSection.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
   return (
     <>
       <AnimatePresence>
-        <NavbarContainerStyled>
+        <NavbarContainerStyled id='navbar'>
             <NavbarWrapper>
                 <FaBars 
                 onClick={handleSetMenuOpen}
                 className='menuBars'/>
-                <h2>PuntoSur</h2>
+                <Logo to="/">PuntoSur</Logo>
                 <NavbarListContainer>
-                    <NavbarItem>Inicio</NavbarItem>
-                    <NavbarItem>Productos</NavbarItem>
-                    <NavbarItem>Contacto</NavbarItem>
+                    <NavbarItem to="/">Inicio</NavbarItem>
+                    <NavbarItem to="/productos">Productos</NavbarItem>
+                    <NavbarItem onClick={scrollToContact}>Contacto</NavbarItem>
                 </NavbarListContainer>
-                <NavbarCartContainer>
+                <NavbarCartContainer to="/checkout">
                     <IoMdCart/>
                 </NavbarCartContainer>
             </NavbarWrapper>
@@ -37,16 +44,16 @@ const Navbar = () => {
         {
           menuOpen &&
           <NavbarListResponsiveContainer
-          initial={{ translateX: -1000 }}
-          animate={{ translateX: 0 }}
-          exit={{ translateX: -1000, opacity: 0 }}
-          transition={{ type: "spring", damping: 27 }}
-          key="menu-responsive"
+          // initial={{ translateX: -200 }}
+          // animate={{ translateX: 0 }}
+          // exit={{ translateX: -500, opacity: 0 }}
+          // transition={{ type: "spring", damping: 30 }}
+          // key="menu-responsive"
           >
             <NavbarListResponsive>
                 <NavbarItem>Inicio</NavbarItem>
                 <NavbarItem>Productos</NavbarItem>
-                <NavbarItem>Contacto</NavbarItem>
+                <NavbarItem onClick={scrollToContact}>Contacto</NavbarItem>
             </NavbarListResponsive>
         </NavbarListResponsiveContainer>
         }

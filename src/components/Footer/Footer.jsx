@@ -5,7 +5,7 @@ import { IoMailOutline } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <FooterContainerStyled>
+    <FooterContainerStyled id='contacto'>
         <FooterWrapper>
             <h2>PuntoSur</h2>
             <NavFootContainer>

@@ -7,13 +7,19 @@ export const FooterContainerStyled = styled.footer`
     background-color: var(--blue);
     align-items: center;
     justify-content: center;
-    padding: 30px 60px;
     gap: 20px;
+    position: relative;
+    z-index: 5;
 `
 export const FooterWrapper = styled.section`
+    padding: 30px 60px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        gap: 60px;
+    }
 `
 export const NavFootContainer = styled.div`
     display: flex;
@@ -42,7 +48,7 @@ export const ItemContacto = styled.div`
     align-items: center;
 `
 export const FooterBottom = styled.div`
-    padding-top: 20px;
+    padding: 20px 0;
     border-top: 1px solid var(--blue-light);
     width: 100%;
     text-align: center;

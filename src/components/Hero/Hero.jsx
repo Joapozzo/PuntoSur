@@ -4,7 +4,7 @@ import HeroBackground from "../../assets/img/hero-img/4da3f42d4a05b5608f8ad65fda
 
 const Hero = () => {
   return (
-    <HeroContainerStyled>
+    <HeroContainerStyled id='hero'>
         <HeroWrapper>
             <StyledBackground src={HeroBackground} alt="" />
             <HeroInfoContainer>

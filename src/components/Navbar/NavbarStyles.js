@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
-
 export const NavbarContainerStyled = styled.nav`
     width: 100%;
     height: 60px;
@@ -15,6 +14,12 @@ export const NavbarContainerStyled = styled.nav`
     justify-content: center;
     flex-direction: column;
 `
+export const Logo = styled(NavLink)`
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+`
+
 export const NavbarWrapper = styled.div`
     display: flex;
     justify-content: space-between;
