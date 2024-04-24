@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components"
 
 export const HeroContainerStyled = styled.div`
@@ -46,22 +47,21 @@ export const HeroInfoContainer = styled.div`
         font-size: 20px;
     }
 
-    a {
-        color: white;
-        background-color: var(--blue);
-        padding: 10px 15px;
-        border-radius: 15px;
-
-        &:hover {
-            background-color: transparent;
-            color: var(--white);
-            border: 0.5px solid var(--white);
-            transition: all 0.3s ease;
-        }
-    }
-
     @media screen and (max-width: 768px){
         padding: 50px;
     }
 `
 
+export const ButtonProducts = styled(NavLink)`
+    color: white;
+    background-color: var(--blue);
+    padding: 10px 15px;
+    border-radius: 15px;
+
+    &:hover {
+        background-color: transparent;
+        color: var(--white);
+        border: 0.5px solid var(--white);
+        transition: all 0.3s ease;
+    }
+`

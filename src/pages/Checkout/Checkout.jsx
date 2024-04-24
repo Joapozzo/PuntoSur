@@ -85,7 +85,7 @@ const Checkout = () => {
                 <ContainerOutsideTable>
                     <TotalCell>Total: $12.00</TotalCell>
                     <ButtonContainer>
-                        <ButtonPay to='pago'>Pagar</ButtonPay>
+                        <ButtonPay to='/pago'>Pagar</ButtonPay>
                         <ButtonSearch to='/productos'>Seguir comprando</ButtonSearch>
                     </ButtonContainer>
                 </ContainerOutsideTable>

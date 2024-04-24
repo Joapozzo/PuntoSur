@@ -30,7 +30,7 @@ const Home = () => {
               <CardProduct/>
               <CardProduct/>
             </CardProductContainer>
-            <ViewMoreButton>Ver mas</ViewMoreButton>
+            <ViewMoreButton to='/productos'>Ver mas</ViewMoreButton>
           </Section>
       </HomeWrapper>
     </HomeContainerStyled>
