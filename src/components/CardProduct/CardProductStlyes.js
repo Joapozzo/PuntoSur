@@ -15,6 +15,17 @@ export const ProductContainerStyled = styled.div`
         border: 1px solid var(--blue-light);
         transition: all .2s ease-in;
     }
+
+    @media screen and (max-width: 768px){
+        max-width: 200px;
+        padding: 30px 0;
+        gap: 15px;
+
+        &:hover {
+            border: none;
+        }
+
+    }
 `
 
 export const ProductImgContainer = styled.div`
@@ -38,6 +49,11 @@ export const ProductInfoContainer = styled.div`
         font-weight: 700;
         font-size: 25px;
         color: var(--gray-300);
+
+        @media screen and (max-width: 768px){
+            font-size: 20px;
+        }
+
     }
 `
 export const ProductFoot = styled.div`
@@ -63,12 +79,18 @@ export const ProductFoot = styled.div`
             border: 0.5px solid var(--blue);
             transition: all 0.3s ease;
         }
+
+        @media screen and (max-width: 768px){
+            font-size: 14px;
+            padding: 10px 20px;
+        }
     }
 `
 export const ProductQuantity = styled.div`
     display: flex;
     gap: 15px;
     color: var(--gray-300);
+    align-items: center;
 `
 export const PriceOfferContainer = styled.div`
     display: flex;
@@ -79,11 +101,19 @@ export const PriceOfferContainer = styled.div`
         color: var(--gray-300);
         font-size: 14px;
         text-decoration: line-through;
+
+        @media screen and (max-width: 768px){
+            font-size: 12px;
+        }
     }
 
     span {
         color: var(--gray-300);
         font-size: 18px;
         font-weight: 700;
+
+        @media screen and (max-width: 768px){
+            font-size: 16px;
+        }
     }
 `

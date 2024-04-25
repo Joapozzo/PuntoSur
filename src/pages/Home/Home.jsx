@@ -4,7 +4,7 @@ import HeroSlider from '../../components/HeroSlider/HeroSlider'
 import Hero from '../../components/Hero/Hero'
 import Section from '../../components/Section/Section'
 import CardProduct from '../../components/CardProduct/CardProduct'
-import Footer from '../../components/Footer/Footer'
+import BotonWhp from '../../components/BotonWhp/BotonWhp'
 
 const Home = () => {
   return (
@@ -32,6 +32,7 @@ const Home = () => {
             </CardProductContainer>
             <ViewMoreButton to='/productos'>Ver mas</ViewMoreButton>
           </Section>
+          <BotonWhp/>
       </HomeWrapper>
     </HomeContainerStyled>
   )

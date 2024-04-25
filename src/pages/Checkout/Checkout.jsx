@@ -4,6 +4,7 @@ import { CheckoutContainerStyles, CheckoutWrapper, CheckoutTable, TableHeader, T
 import { VscError } from "react-icons/vsc";
 import Section from '../../components/Section/Section';
 import CardProduct from '../../components/CardProduct/CardProduct';
+import BotonWhp from '../../components/BotonWhp/BotonWhp';
 
 const Checkout = () => {
   return (
@@ -100,6 +101,7 @@ const Checkout = () => {
                 <CardProduct/>
             </CheckProductsContainer>
         </Section>
+        <BotonWhp/>
     </CheckoutContainerStyles>
   );
 };

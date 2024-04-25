@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const HomeContainerStyled = styled.main`
     width: 100%;
-    padding: 60px 0 0;
+    padding: 60px 0 0 0;
 `
 export const HomeWrapper = styled.div`
     flex-direction: column;
@@ -15,6 +15,13 @@ export const CardProductContainer = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
+
+    @media screen and (max-width: 768px){
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 `
 export const ViewMoreButton = styled(NavLink)`
     background-color: transparent;

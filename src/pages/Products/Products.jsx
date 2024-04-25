@@ -4,6 +4,7 @@ import { Cateogories } from '../../components/Categories/Cateogories'
 import Footer from '../../components/Footer/Footer'
 import Section from '../../components/Section/Section'
 import CardProduct from '../../components/CardProduct/CardProduct'
+import BotonWhp from '../../components/BotonWhp/BotonWhp'
 
 const Products = () => {
   return (
@@ -30,6 +31,7 @@ const Products = () => {
                     <CardProduct/>
                 </ProductContainer>
             </ProductsContainer>
+            <BotonWhp/>
         </ProductsWrapper>
     </ProductsContainerStyled>
   )
