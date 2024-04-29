@@ -8,6 +8,7 @@ export const HeroWrapper = styled.div`
     position: relative;
     width: 100%;
     height: 500px;
+
 `
 export const StyledBackground = styled.img`
     position: absolute;
