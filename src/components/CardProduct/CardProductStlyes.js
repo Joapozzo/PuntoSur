@@ -17,8 +17,8 @@ export const ProductContainerStyled = styled.div`
     }
 
     @media screen and (max-width: 768px){
-        max-width: 200px;
-        padding: 30px 0;
+        max-width: 130px;
+        padding: 10px 0;
         gap: 15px;
 
         &:hover {
@@ -27,14 +27,13 @@ export const ProductContainerStyled = styled.div`
 
     }
 `
-
 export const ProductImgContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
 `
 export const ImgCustom = styled.img`
-    width: 50%;
+    width: 60%;
     height: 100%;
     object-fit: cover;
 `
@@ -51,7 +50,8 @@ export const ProductInfoContainer = styled.div`
         color: var(--gray-300);
 
         @media screen and (max-width: 768px){
-            font-size: 20px;
+            font-size: 18px;
+            width: 100%;
         }
 
     }
@@ -62,6 +62,10 @@ export const ProductFoot = styled.div`
     justify-content: center;
     gap: 15px;
     width: 100%;
+    
+    @media screen and (max-width: 768px){
+        gap: 10px;
+    }
 
     &i,svg {
         color: var(--blue);
@@ -81,8 +85,8 @@ export const ProductFoot = styled.div`
         }
 
         @media screen and (max-width: 768px){
-            font-size: 14px;
-            padding: 10px 20px;
+            font-size: 12px;
+            padding: 8px 20px;
         }
     }
 `
@@ -91,11 +95,15 @@ export const ProductQuantity = styled.div`
     gap: 15px;
     color: var(--gray-300);
     align-items: center;
+    @media screen and (max-width: 768px){
+        gap: 10px;
+    }
 `
 export const PriceOfferContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
+
 
     p {
         color: var(--gray-300);

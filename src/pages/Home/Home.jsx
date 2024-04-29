@@ -7,6 +7,11 @@ import CardProduct from '../../components/CardProduct/CardProduct'
 import BotonWhp from '../../components/BotonWhp/BotonWhp'
 
 const Home = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <HomeContainerStyled>
       <HomeWrapper>
@@ -30,7 +35,7 @@ const Home = () => {
               <CardProduct/>
               <CardProduct/>
             </CardProductContainer>
-            <ViewMoreButton to='/productos'>Ver mas</ViewMoreButton>
+            <ViewMoreButton to='/productos' onClick={scrollToTop}>Ver mas</ViewMoreButton>
           </Section>
           <BotonWhp/>
       </HomeWrapper>

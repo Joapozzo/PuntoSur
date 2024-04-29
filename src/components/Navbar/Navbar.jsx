@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   const scrollToTop = () => {
-    window.scrollTo(0, 0); // Desplaza la página hacia arriba
+    window.scrollTo(0, 0);
   };
 
   const scrollToContact = () => {

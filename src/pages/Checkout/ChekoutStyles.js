@@ -32,18 +32,6 @@ export const EnviromentTable = styled.div`
         overflow-x: auto;
         min-width: 100%;
     }
-
-    /* Elimina los puntos (.) antes de las clases CSS */
-    ::-webkit-scrollbar {
-        height: 12px; /* Altura de la barra de desplazamiento */
-        background-color: red; /* Color de fondo de la barra de desplazamiento */
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background-color: red; /* Color del pulgar de la barra de desplazamiento */
-        border-radius: 6px; /* Radio de borde del pulgar */
-        border: 3px solid red; /* Borde del pulgar de la barra de desplazamiento */
-    }
 `;
 
 export const CheckoutTable = styled.table`
@@ -78,6 +66,22 @@ export const QuantityInput = styled.input`
   width: 50px;
   padding: 5px;
   cursor: pointer;
+
+  /* Estilos para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    /* Asegura que las flechas siempre estén visibles */
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    -moz-appearance: textfield;
+
+    /* Estilos para los botones de incremento y decremento */
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      appearance: none;
+      margin: 0; /* Quita el espacio adicional */
+    }
+  }
 `;
 
 export const DeleteButton = styled.button`

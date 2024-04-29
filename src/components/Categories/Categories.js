@@ -5,12 +5,15 @@ export const CategoriesContainerStyled = styled(motion.div)`
     width: 25%;
     height: 100%;
     background-color: var(--blue);
-    position: absolute;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    overflow-y: auto;
+    z-index: 5;
     @media screen and (max-width: 768px){
         width: 50%;
     }
-    z-index: 5;
-`
+`;
 export const CategoriesWrapper = styled.div`
     width: 100%;
     padding: 30px;
@@ -19,7 +22,6 @@ export const CategoriesWrapper = styled.div`
     flex-direction: column;
     justify-content:start;
     align-items: start;
-
     h3 {
         font-size: 20px;
         font-weight: 700;
@@ -75,6 +77,7 @@ export const OpenerContainerStyled = styled(motion.div)`
     height: 100%;
     background-color: var(--blue);
     position: absolute;
+    position: fixed;
     @media screen and (max-width: 768px){
         width: 10%;
     }
@@ -85,7 +88,6 @@ export const OpenerWrapper = styled.div`
     display: flex;
     gap: 30px;
     flex-direction: column;
-
     h3 {
         font-size: 20px;
         font-weight: 700;

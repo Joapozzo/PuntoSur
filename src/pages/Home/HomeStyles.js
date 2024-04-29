@@ -17,10 +17,7 @@ export const CardProductContainer = styled.div`
     gap: 50px;
 
     @media screen and (max-width: 768px){
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        
     }
 `
 export const ViewMoreButton = styled(NavLink)`
